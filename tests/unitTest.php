@@ -8,7 +8,7 @@ require 'FileSystem.php';
 final class UnitTests extends TestCase{
 	public $fileSystemInstance;
 	
-	public function setup(){
+	public function setUp(){
 		$this->fileSystemInstance = new FileSystem();
 	}
 	
