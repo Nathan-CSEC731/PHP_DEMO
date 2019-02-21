@@ -6,12 +6,12 @@ class FileSystem{
 		$myfile = fopen($name, "w");
 		fwrite($myfile, $contents);
 		fclose($myfile);
-		return "File Created"
+		return "File Created";
 	}
 	
 	public function deleteFile($name){
 		unlink($name);
-		return "File Deleted"
+		return "File Deleted";
 	}
 	
 	public function viewFile($name){
