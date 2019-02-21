@@ -30,8 +30,8 @@ class FileSystem{
 		return "Invalid Name";
 	}
 	
-	public function checkPath($path){
-		return (strpos($path, "..") == false);
+	private function checkPath($path){
+		return !is_int(strpos($path, ".."));
 	}
 	
 }
