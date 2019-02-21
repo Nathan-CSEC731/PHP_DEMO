@@ -3,8 +3,8 @@
 	processIsolation="false"
 	stopOnFailure="false">
 	<testsuites>
-		<testsuit name="TESTS">
+		<testsuite name="TESTS">
 			<directory>.</directory>
-		</testsuit>
+		</testsuite>
 	</testsuites>
 </phpunit>
