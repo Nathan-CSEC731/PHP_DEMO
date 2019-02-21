@@ -52,7 +52,6 @@ final class UnitTests extends TestCase{
 	*/
 	public function testTraversal(){
 		$response = $this->fileSystemInstance->createFile("../../../../../../../etc/passwd", "My Password");
-		$this->assertEquals(file_exists("../../../../../../../etc/passwd"), false);
 		$this->assertEquals("Invalid Name", $response);
 	}
 }
