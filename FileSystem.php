@@ -9,7 +9,7 @@ class FileSystem{
 			fclose($myfile);
 			return "File Created";
 		}
-		return "Invalid Name"
+		return "Invalid Name";
 	}
 	
 	public function deleteFile($name){
@@ -17,7 +17,7 @@ class FileSystem{
 			unlink($name);
 			return "File Deleted";
 		}
-		return "Invalid Name"
+		return "Invalid Name";
 	}
 	
 	public function viewFile($name){
@@ -27,7 +27,7 @@ class FileSystem{
 			fclose($myfile);
 			return $content;
 		}
-		return "Invalid Name"
+		return "Invalid Name";
 	}
 	
 	public function checkPath($path){
