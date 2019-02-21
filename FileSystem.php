@@ -31,7 +31,7 @@ class FileSystem{
 	}
 	
 	public function checkPath($path){
-		return (strpos($path, "..") == false)
+		return (strpos($path, "..") == false);
 	}
 	
 }
