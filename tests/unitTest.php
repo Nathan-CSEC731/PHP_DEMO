@@ -13,15 +13,19 @@ final class UnitTests extends TestCase{
 	}
 	
 	public function testCreate(){
-		$this->assertEquals(1, 1);
+		$fileSystemInstance->createFile("test.txt", "Hello World");
+		$this->assertFileExists("test.txt");
 	}
 	
 	public function testDelete(){
-		$this->assertEquals(1, 1);
+		$fileSystemInstance->deleteFile("test2.txt", "Hello World");
+		$this->assertEquals(file_exists("test2.txt"), false);
 	}
 	
 	public function testView(){
-		$this->assertEquals(1, 1);
+		$fileSystemInstance->createFile("test3.txt", "Hello World");
+		$content = $fileSystemInstance->viewFile("test3.txt");
+		$this->assertEquals("Hello World", $content);
 	}
 	
 	public function testNetcat(){
