@@ -9,7 +9,7 @@ class FileSystem{
 	}
 	
 	public function deleteFile($name){
-		unlink($name)
+		unlink($name);
 	}
 	
 	public function viewFile($name){
