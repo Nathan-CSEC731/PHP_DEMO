@@ -2,8 +2,9 @@
 
 require FileSystem.php
 
+use PHPUnit\Framework\TestCase;
+
 class Tests extends TestCase{
-	use PHPUnit\Framework\TestCase;
 	public $fileSystemInstance;
 	
 	public function setup(){
