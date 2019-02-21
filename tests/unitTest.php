@@ -6,9 +6,9 @@ use PHPUnit\Framework\TestCase;
 require 'FileSystem.php';
 
 final class UnitTests extends TestCase{
-	public $fileSystemInstance;
+	protected $fileSystemInstance;
 	
-	public function setUp(){
+	protected function setUp(){
 		$this->fileSystemInstance = new FileSystem();
 	}
 	
