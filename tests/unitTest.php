@@ -3,6 +3,8 @@ declare(strict_types=1);
 
 use PHPUnit\Framework\TestCase;
 
+require 'FileSystem.php';
+
 final class UnitTests extends TestCase{
 	public $fileSystemInstance;
 	
