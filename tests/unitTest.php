@@ -13,18 +13,18 @@ final class UnitTests extends TestCase{
 	}
 	
 	public function testCreate(){
-		$fileSystemInstance->createFile("test.txt", "Hello World");
+		$this->fileSystemInstance->createFile("test.txt", "Hello World");
 		$this->assertFileExists("test.txt");
 	}
 	
 	public function testDelete(){
-		$fileSystemInstance->deleteFile("test2.txt", "Hello World");
+		$this->fileSystemInstance->deleteFile("test2.txt", "Hello World");
 		$this->assertEquals(file_exists("test2.txt"), false);
 	}
 	
 	public function testView(){
-		$fileSystemInstance->createFile("test3.txt", "Hello World");
-		$content = $fileSystemInstance->viewFile("test3.txt");
+		$this->fileSystemInstance->createFile("test3.txt", "Hello World");
+		$content = $this->fileSystemInstance->viewFile("test3.txt");
 		$this->assertEquals("Hello World", $content);
 	}
 	
