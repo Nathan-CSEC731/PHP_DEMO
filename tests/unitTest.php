@@ -1,10 +1,9 @@
 <?php
-
-require FileSystem.php
+declare(strict_types=1);
 
 use PHPUnit\Framework\TestCase;
 
-class Tests extends TestCase{
+final class UnitTests extends TestCase{
 	public $fileSystemInstance;
 	
 	public function setup(){
