@@ -21,13 +21,13 @@ class FileSystem{
 	}
 	
 	public function viewFile($name){
-		if($this->checkPath($name)){
+		//if($this->checkPath($name)){
 			$myfile = fopen($name, "r");
 			$content = fread($myfile, filesize($name));
 			fclose($myfile);
 			return $content;
-		}
-		return "Invalid Name";
+		//}
+		//return "Invalid Name";
 	}
 	
 	private function checkPath($path){
